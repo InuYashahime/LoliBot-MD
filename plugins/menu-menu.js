@@ -7,7 +7,7 @@ import { promises } from 'fs'
 import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
 try {
-let vn = 'https://qu.ax/xbeU.mp3'
+let vn = ''
 let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
@@ -229,8 +229,6 @@ ${readMore}
 > 📥 _${usedPrefix}instagram_
 > 📥 _${usedPrefix}gitclone_
 > 📥 _${usedPrefix}gdrive_
-> 📥 _${usedPrefix}xnxxdl_
-> 📥 _${usedPrefix}xvideosdl_
 > 📥 _${usedPrefix}twitter_
 > 📥 _${usedPrefix}fb_
 > 📥 _${usedPrefix}ytmp3_
@@ -386,12 +384,7 @@ ${readMore}
 > 👾 _${usedPrefix}sakura_
 > 👾 _${usedPrefix}cosplay_
 
-─────────────
-
-  『 \`COMANDO +18\` 』
-  
-> 🔞 _${usedPrefix}hornymenu_
-> *Usar bajo sus responsabilidad Nota : no sea pajero*
+────────────
 
 ─────────────
 
