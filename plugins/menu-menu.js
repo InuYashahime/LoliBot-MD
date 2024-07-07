@@ -77,17 +77,12 @@ let menu = `『 ${wm} 』
 
 *Hola ${taguser}*
 
-\`□ Creador:\`  Mario
-\`□ Numero del creador:\` 
-> ${asistencia}
+\`□ Creador:\`  shadow 
 \`□ Numero del bot ofc:\`
 > ${bot}
 \`□ Tiempos activos :\` ${uptime}
 \`□ Usuarios:\` ${Object.keys(global.db.data.users).length}
 \`□ Registrado:\` ${rtotalreg} de ${totalreg} ${(conn.user.jid == global.conn.user.jid ? '' : `\n□ *Soy un sub bot del:* wa.me/${global.conn.user.jid.split`@`[0]}`) || ''}
-
-*\`□ Activar tu bot 24/7 activo en Infinity-Host\`*
-https://youtu.be/o6ZSpMOsvHs?si=Kp2swTeJOUYSg8wn
 
 \`◉ INFO DEL USUARIO\`
 > □ *🙌 Registrado:* ${user.registered === true ? '✅' : '❌ _#verificar_'}
